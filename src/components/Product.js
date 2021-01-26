@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { saveItemToCart } from "../actions/cartActions";
 
 const Product = ({ product }) => {
-  const addToCartHandler = () => {};
+  const dispatch = useDispatch();
+
+  const addToCartHandler = () => {
+    dispatch(saveItemToCart(cartQty, product));
+  };
 
   const [cartQty, setCartQty] = useState(0);
   return (
