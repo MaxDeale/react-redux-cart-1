@@ -1,0 +1,7 @@
+.cart-container {
+  width: 70%;
+  background-color: rgb(146, 146, 146);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
